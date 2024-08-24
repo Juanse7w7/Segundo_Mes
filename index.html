@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felices 2 Meses, Ari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #FFE4E1;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #FF69B4;
+            font-size: 3em;
+            text-align: center;
+        }
+        .photo-container {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .photo.active {
+            opacity: 1;
+        }
+        .quote {
+            text-align: center;
+            font-size: 1.5em;
+            color: #FF69B4;
+            margin: 20px 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .button-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #FF69B4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #FF1493;
+        }
+        .letter {
+            display: none;
+            margin-top: 40px;
+            background-color: #FFF0F5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            color: #FF69B4;
+            font-size: 1.5em;
+            line-height: 1.5;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        .music-button {
+            padding: 10px;
+            background-color: #FF69B4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+            font-size: 1em;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .music-button:hover {
+            background-color: #FF1493;
+        }
+        .music-icon {
+            margin-right: 8px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Felices 2 Meses, Mi Querida Ari</h1>
+    
+    <div class="photo-container" id="photoContainer">
+        <img src="foto1.jpg" alt="Nosotros" class="photo active">
+        <img src="foto2.jpg" alt="Nosotros" class="photo">
+        <img src="foto3.jpg" alt="Nosotros" class="photo">
+        <img src="foto4.jpg" alt="Nosotros" class="photo">
+        <img src="foto5.jpg" alt="Nosotros" class="photo">
+        <img src="foto6.jpg" alt="Nosotros" class="photo">
+        <img src="foto7.jpg" alt="Nosotros" class="photo"> <!-- Nueva foto -->
+    </div>
+    
+    <p class="quote" id="quote">Cada momento contigo es un tesoro. Te amo, Ari.</p>
+
+    <div class="button-container" id="buttonContainer">
+        <button id="nextPhotoBtn">Siguiente Foto</button>
+        <button id="musicBtn" class="music-button"><span class="music-icon">🎵</span> Reproducir Música</button>
+    </div>
+
+    <div class="letter" id="finalLetter">
+        🌟 Mi Querida Ari 🌟<br><br>
+        Han pasado dos meses maravillosos desde que nuestras vidas se cruzaron, y cada día contigo ha sido un regalo precioso. Desde el primer momento en que nos conocimos, sentí una conexión especial contigo que solo ha crecido con el tiempo. 💖
+        <br><br>
+        Gracias por ser mi roca y mi confidente, por cada sonrisa que compartimos y cada risa que ilumina nuestros días. Me has mostrado una forma de amor que no sabía que existía y has hecho que cada momento juntos sea inolvidable. 🌹
+        <br><br>
+        Las fotos que ves aquí son recuerdos de los momentos hermosos que hemos compartido en Roblox. Aunque la distancia nos impide estar físicamente juntos, cada instante en el juego ha sido una forma maravillosa de mantenernos cerca y de crear recuerdos juntos. 🎮✨
+        <br><br>
+        En los días buenos y en los no tan buenos, tu amor y paciencia han sido un faro de luz en mi vida. Sé que a veces te he hecho enojar y poner triste, y lamento profundamente esos momentos. 😔 Mi intención nunca fue lastimarte, y me duele saber que en alguna ocasión pude haberte causado dolor. Prometo seguir aprendiendo y esforzándome por ser mejor cada día, porque tu felicidad es lo más importante para mí. 🌈
+        <br><br>
+        Como dice la canción "Yellow" de Coldplay: 🎶 "Mira las estrellas, mira cómo brillan para ti, y todo lo que haces, sí, todo era amarillo." 🎶 Esta frase me recuerda que, así como las estrellas brillan intensamente, así brilla tu amor en mi vida. ✨
+        <br><br>
+        Otra parte de la canción que me toca profundamente es: 🎶 "Te daré todo lo que tengo, y todo lo que soy." 🎶 Eso refleja cuánto estás en cada rincón de mi corazón y cómo deseo ser siempre tu apoyo y tu amor incondicional. 💑
+        <br><br>
+        Te amo más de lo que las palabras pueden expresar, y estoy emocionado por todos los momentos hermosos que aún nos esperan. Eres el amor de mi vida, y cada día contigo es un sueño hecho realidad. 😘
+        <br><br>
+        Con todo mi corazón y amor eterno, Sebas ❤️
+    </div>
+
+    <audio id="backgroundMusic" src="musica_romantica.mp3" type="audio/mpeg"></audio>
+
+    <script>
+        const photos = document.querySelectorAll('.photo');
+        const quotes = [
+            "Cada momento contigo es un tesoro. Te amo, Ari.",
+            "Eres mi razón de ser y mi fuente de alegría.",
+            "En tus ojos encuentro mi hogar y mi felicidad.",
+            "No hay nada más bello que estar a tu lado.",
+            "Cada día a tu lado es una bendición que atesoro.",
+            "Tú eres mi sol en los días más oscuros."
+        ];
+        const quoteElement = document.getElementById('quote');
+        const photoContainer = document.getElementById('photoContainer');
+        const buttonContainer = document.getElementById('buttonContainer');
+        const letterElement = document.getElementById('finalLetter');
+        const musicBtn = document.getElementById('musicBtn');
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        let currentPhoto = 0;
+        let isPlaying = true;
+
+        document.getElementById('nextPhotoBtn').addEventListener('click', function() {
+            photos[currentPhoto].classList.remove('active');
+            currentPhoto = (currentPhoto + 1) % photos.length;
+            photos[currentPhoto].classList.add('active');
+            quoteElement.textContent = quotes[currentPhoto];
+            
+            if (currentPhoto === photos.length - 1) {
+                photoContainer.classList.add('hidden'); // Oculta la galería de fotos
+                buttonContainer.classList.add('hidden'); // Oculta el botón
+                letterElement.style.display = 'block'; // Muestra la carta
+            } else {
+                photoContainer.classList.remove('hidden'); // Muestra la galería de fotos
+                buttonContainer.classList.remove('hidden'); // Muestra el botón
+                letterElement.style.display = 'none'; // Oculta la carta
+            }
+        });
+
+        musicBtn.addEventListener('click', function() {
+            if (isPlaying) {
+                backgroundMusic.pause();
+                musicBtn.innerHTML = '<span class="music-icon">🎵</span> Reproducir Música';
+            } else {
+                backgroundMusic.play();
+                musicBtn.innerHTML = '<span class="music-icon">⏸️</span> Pausar Música';
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // Iniciar la música automáticamente al cargar la página
+        backgroundMusic.play();
+    </script>
+</body>
+</html>
